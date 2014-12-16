@@ -1,7 +1,6 @@
 {
-  "name": "dota2-elo",
+  "name": "dota2-rating",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "request": "^2.49.0",
     "com.izaakschroeder.trueskill": "^0.0.2",
