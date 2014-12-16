@@ -26,3 +26,5 @@ And the players collection in the database will build. Rating algorithm used is 
 ## Querying the database
 ### Top 50
     db.players.find().sort({'rating.mu': -1}).limit(50)
+### Average Rating
+    db.players.aggregate([{$group:{_id:null,total:{$avg: '$rating.mu'}}}])
